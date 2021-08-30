@@ -3,3 +3,4 @@
 source 'https://rubygems.org'
 
 gem 'http', '~> 5.0', '>= 5.0.1'
+gem 'rspec', '~> 3.5'
