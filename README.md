@@ -14,7 +14,7 @@
 @api.profile('76561198029517073')
 ``` 
 
-Will return an object like the one below (many attributes removed to reduce the amount of lines):
+Will return an object like the one below (with many more attributes that have been removed from this example):
 
 ``` ruby
 OpenStruct {
