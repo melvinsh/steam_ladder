@@ -8,7 +8,7 @@ describe SteamLadder do
   end
 
   describe 'profile' do
-    it "retrieves a Steam Ladder profile" do
+    it 'retrieves a Steam Ladder profile' do
       profile = @api.profile('76561198029517073')
 
       expect(profile.steam_user.steam_id).to eq('76561198029517073')

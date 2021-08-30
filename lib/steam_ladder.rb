@@ -10,13 +10,13 @@ class SteamLadder
   end
 
   def profile(steam_id_64)
-    json = http_get(@url + '/profile/' + steam_id_64 + '/')
+    json = http_get("#{@url}/profile/#{steam_id_64}/")
     JSON.parse(json, object_class: OpenStruct)
   end
 
   private
 
   def http_get(url)
-    HTTP[:authorization => "Token #{@key}"].get(url)
+    HTTP[authorization: "Token #{@key}"].get(url)
   end
 end
