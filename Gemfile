@@ -2,5 +2,6 @@
 
 source 'https://rubygems.org'
 
+gem 'dotenv', '~> 2.7', '>= 2.7.6'
 gem 'http', '~> 5.0', '>= 5.0.1'
 gem 'rspec', '~> 3.5'
