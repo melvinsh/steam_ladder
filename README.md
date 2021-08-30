@@ -6,12 +6,12 @@
 ## Usage examples
 ### Initialization
 ``` ruby
-@api = SteamLadder.new('API_KEY')
+@steam_ladder = SteamLadder.new('API_KEY')
 ```
 
 ### Getting a profile
 ``` ruby
-@api.profile('76561198029517073')
+profile = @steam_ladder.profile('76561198029517073')
 ``` 
 
 Will return an object like the one below (with many more attributes that have been removed from this example):
