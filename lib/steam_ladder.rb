@@ -17,6 +17,7 @@ class SteamLadder
   private
 
   def http_get(url)
-    HTTP[authorization: "Token #{@key}"].get(url)
+    HTTP.headers(authorization: "Token #{@key}")
+        .get(url)
   end
 end
