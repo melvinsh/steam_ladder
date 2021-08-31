@@ -83,7 +83,7 @@ OpenStruct {
 }
 ```
 
-The `ladder` contains a maximum of `100` users and their position.
+The `ladder` contains a maximum of `100` users and their position. Example user:
 
 ``` ruby
 OpenStruct {
