@@ -3,13 +3,29 @@
 
 [![Build Status](https://app.travis-ci.com/melvinsh/steam_ladder.svg?branch=main)](https://app.travis-ci.com/melvinsh/steam_ladder)  [![Gem Version](https://badge.fury.io/rb/steam_ladder.svg)](https://badge.fury.io/rb/steam_ladder)  [![Coverage Status](https://coveralls.io/repos/github/melvinsh/steam_ladder/badge.svg?branch=main)](https://coveralls.io/github/melvinsh/steam_ladder?branch=main)
 
-## Usage examples
-### Initialization
+## Table of contents
+
+<!-- vscode-markdown-toc -->
+* [Usage examples](#Usageexamples)
+	* [Initialization](#Initialization)
+	* [Getting a profile](#Gettingaprofile)
+	* [Getting a ladder](#Gettingaladder)
+		* [Normal request](#Normalrequest)
+		* [Specifying a region or country](#Specifyingaregionorcountry)
+
+<!-- vscode-markdown-toc-config
+	numbering=false
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+## <a name='Usageexamples'></a>Usage examples
+### <a name='Initialization'></a>Initialization
 ``` ruby
 @steam_ladder = SteamLadder.new('API_KEY')
 ```
 
-### Getting a profile
+### <a name='Gettingaprofile'></a>Getting a profile
 ``` ruby
 profile = @steam_ladder.profile('76561198029517073')
 ``` 
@@ -56,14 +72,14 @@ profile.steam_user.steam_join_date  # '2010-08-25T18:20:11'
 profile.steam_stats.badges.total    # 337
 ```
 
-### Getting a ladder
-#### Normal request
+### <a name='Gettingaladder'></a>Getting a ladder
+#### <a name='Normalrequest'></a>Normal request
 ``` ruby
 # Available types: xp, games, playtime, badges, steam_age, vac, game_ban
 ladder = @steam_ladder.ladder('xp')
 ``` 
 
-#### Specifying a region or country
+#### <a name='Specifyingaregionorcountry'></a>Specifying a region or country
 ``` ruby
 # Available country codes: alpha-2 country codes (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 # Available regions: europe, north_america, south_america, asia, africa, oceania, antarctica
