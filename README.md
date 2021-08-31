@@ -63,7 +63,7 @@ profile.steam_stats.badges.total    # 337
 ladder = @steam_ladder.ladder('xp')
 ``` 
 
-### Specifying a region or country
+#### Specifying a region or country
 ``` ruby
 # Available country codes: alpha-2 country codes (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 # Available regions: europe, north_america, south_america, asia, africa, oceania, antarctica
