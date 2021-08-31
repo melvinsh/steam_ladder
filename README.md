@@ -14,7 +14,7 @@
 profile = @steam_ladder.profile('76561198029517073')
 ``` 
 
-Will return an object like the one below (with many more attributes that have been removed from this example):
+Will return an object like the one below (with many more attributes that have been removed from this example).
 
 ``` ruby
 OpenStruct {
@@ -72,7 +72,7 @@ ladder = @steam_ladder.ladder('xp', 'nl')
 ladder = @steam_ladder.ladder('games', 'europe')
 ``` 
 
-Will return an object like the one below (with many more attributes that have been removed from this example):
+Will return an object like the one below.
 
 ``` ruby
 OpenStruct {
