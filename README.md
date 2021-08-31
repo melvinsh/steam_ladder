@@ -51,8 +51,8 @@ OpenStruct {
 Objects can be accessed like:
 
 ``` ruby
-profile.steam_user.steam_id == '76561198029517073'
-profile.steam_user.steam_join_date == '2010-08-25T18:20:11'
-profile.steam_stats.badges.total == 337
+profile.steam_user.steam_id         # '76561198029517073'
+profile.steam_user.steam_join_date  # '2010-08-25T18:20:11'
+profile.steam_stats.badges.total    # 337
 ```
 
