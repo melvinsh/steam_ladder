@@ -14,6 +14,14 @@ class SteamLadder
     JSON.parse(json, object_class: OpenStruct)
   end
 
+  def ladder(type, country = nil)
+    url = "#{@url}/ladder/#{type}/"
+    url += "#{country}/" if country
+
+    json = http_get(url)
+    JSON.parse(json, object_class: OpenStruct)
+  end
+
   private
 
   def http_get(url)
