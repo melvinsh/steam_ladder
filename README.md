@@ -25,7 +25,7 @@
 ## <a name='Installation'></a>Installation
 Add this line to your application's Gemfile:
 ```ruby
-gem 'steam_ladder', '~> 1.0.0'
+gem 'steam_ladder', '~> 1.0', '>= 1.0.1'
 ```
 
 And then execute:
