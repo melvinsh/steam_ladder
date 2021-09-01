@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'steam_ladder'
-  s.version     = '0.2.0'
+  s.version     = '0.3.0'
   s.licenses    = ['MIT']
   s.summary     = 'Ruby wrapper for the Steam Ladder API.'
   s.description = 'Ruby wrapper to access the Steam Ladder API at https://steamladder.com/api/.'
