@@ -19,6 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'http', '~> 5.0', '>= 5.0.1'
 
   gem.add_development_dependency 'coveralls', '~> 0.8.23'
-  gem.add_development_dependency 'dotenv', '~> 2.7', '>= 2.7.6'
   gem.add_development_dependency 'rspec', '~> 3.5'
 end
