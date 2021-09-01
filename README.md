@@ -1,4 +1,5 @@
-# `steam_ladder`
+<img width="500px" src="https://user-images.githubusercontent.com/1312973/131711153-f8390028-8e1d-4e84-8b50-aa859dc4fef8.png"  />
+
 <b>Ruby wrapper for the <a href="https://steamladder.com/">Steam Ladder</a> API</b>.
 
 [![Build Status](https://app.travis-ci.com/melvinsh/steam_ladder.svg?branch=main)](https://app.travis-ci.com/melvinsh/steam_ladder)  [![Gem Version](https://badge.fury.io/rb/steam_ladder.svg)](https://badge.fury.io/rb/steam_ladder)  [![Coverage Status](https://coveralls.io/repos/github/melvinsh/steam_ladder/badge.svg?branch=main)](https://coveralls.io/github/melvinsh/steam_ladder?branch=main)
