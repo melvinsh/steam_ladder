@@ -2,7 +2,9 @@
 
 <b>Ruby wrapper for the <a href="https://steamladder.com/">Steam Ladder</a> API</b>.
 
-[![Build Status](https://app.travis-ci.com/melvinsh/steam_ladder.svg?branch=main)](https://app.travis-ci.com/melvinsh/steam_ladder)  [![Gem Version](https://badge.fury.io/rb/steam_ladder.svg)](https://badge.fury.io/rb/steam_ladder)  [![Coverage Status](https://coveralls.io/repos/github/melvinsh/steam_ladder/badge.svg?branch=main)](https://coveralls.io/github/melvinsh/steam_ladder?branch=main)
+[![Build Status](https://app.travis-ci.com/melvinsh/steam_ladder.svg?branch=main)](https://app.travis-ci.com/melvinsh/steam_ladder)
+[![Gem Version](https://badge.fury.io/rb/steam_ladder.svg)](https://badge.fury.io/rb/steam_ladder)
+[![Coverage Status](https://coveralls.io/repos/github/melvinsh/steam_ladder/badge.svg?branch=main)](https://coveralls.io/github/melvinsh/steam_ladder?branch=main)
 
 ## <a name='Tableofcontents'></a>Table of contents
 
