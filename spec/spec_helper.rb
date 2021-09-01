@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+require 'dotenv'
+Dotenv.load('.env')
+
+if ENV['API_KEY'] == 'KEYHERE'
+  raise "Please set ENV['API_KEY'] in order to run the tests."
+  exit 1
+end
+
 require 'coveralls'
 Coveralls.wear!
 
