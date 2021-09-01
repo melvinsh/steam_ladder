@@ -6,6 +6,7 @@
 ## <a name='Tableofcontents'></a>Table of contents
 
 <!-- vscode-markdown-toc -->
+* [Installation](#Installation)
 * [Usage examples](#Usageexamples)
 	* [Initialization](#Initialization)
 	* [Getting a profile](#Gettingaprofile)
@@ -19,6 +20,27 @@
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
+
+## <a name='Installation'></a>Installation
+Add this line to your application's Gemfile:
+```ruby
+gem 'steam_ladder', '~> 0.3.0'
+```
+
+And then execute:
+```bash
+$ bundle
+```
+
+Or install it yourself as:
+```bash
+$ gem install steam_ladder
+```
+
+Inside of your Ruby program do:
+```ruby
+require 'steam_ladder'
+```
 
 ## <a name='Usageexamples'></a>Usage examples
 ### <a name='Initialization'></a>Initialization
