@@ -76,7 +76,7 @@ profile.steam_stats.badges.total    # 337
 
 ### <a name='Updatingaprofile'></a>Updating a profile
 ``` ruby
-update = @steam_ladder.update('76561198029517073')
+update = @steam_ladder.update_profile('76561198029517073')
 ``` 
 
 Returns an object with a `success` attribute that can be either `true` or `false`.
