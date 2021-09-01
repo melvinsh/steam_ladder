@@ -3,12 +3,14 @@
 
 [![Build Status](https://app.travis-ci.com/melvinsh/steam_ladder.svg?branch=main)](https://app.travis-ci.com/melvinsh/steam_ladder)  [![Gem Version](https://badge.fury.io/rb/steam_ladder.svg)](https://badge.fury.io/rb/steam_ladder)  [![Coverage Status](https://coveralls.io/repos/github/melvinsh/steam_ladder/badge.svg?branch=main)](https://coveralls.io/github/melvinsh/steam_ladder?branch=main)
 
-## Table of contents
+## <a name='Tableofcontents'></a>Table of contents
 
 <!-- vscode-markdown-toc -->
+* [Table of contents](#Tableofcontents)
 * [Usage examples](#Usageexamples)
 	* [Initialization](#Initialization)
 	* [Getting a profile](#Gettingaprofile)
+	* [Updating a profile](#Updatingaprofile)
 	* [Getting a ladder](#Gettingaladder)
 		* [Normal request](#Normalrequest)
 		* [Specifying a region or country](#Specifyingaregionorcountry)
@@ -70,6 +72,29 @@ Objects can be accessed like:
 profile.steam_user.steam_id         # '76561198029517073'
 profile.steam_user.steam_join_date  # '2010-08-25T18:20:11'
 profile.steam_stats.badges.total    # 337
+```
+
+### <a name='Updatingaprofile'></a>Updating a profile
+``` ruby
+update = @steam_ladder.update('76561198029517073')
+``` 
+
+Returns an object with a `success` attribute that can be either `true` or `false`.
+If the update fails (usually due to the limit - once every four hours), the `error` attribute can be accessed.
+
+The `last_update` attribute indicates the last update time.
+
+Example implementation:
+
+``` ruby
+update = @api.update_profile('76561197996764410')
+
+if update.success
+  puts "Yay! We did it."
+else
+  puts "Oh no, something went wrong: #{update.error}"
+  puts "Last update was at #{update.last_update}, so maybe we went too fast."
+end
 ```
 
 ### <a name='Gettingaladder'></a>Getting a ladder

@@ -16,6 +16,22 @@ describe SteamLadder do
     end
   end
 
+  describe 'update_profile' do
+    it 'updates a Steam Ladder profile' do
+      update = @api.update_profile('76561197996764410')
+
+      expect(update).to respond_to(:success, :last_update)
+
+      expect(update.success).to be(true).or be(false)
+      expect(update.last_update).to be_a(String)
+
+      unless update.success
+        expect(update).to respond_to(:error)
+        expect(update.error).to be_a(String)
+      end
+    end
+  end
+
   describe 'ladder' do
     it 'retrieves a Steam ladder by type' do
       ladder = @api.ladder('xp')
