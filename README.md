@@ -6,7 +6,6 @@
 ## <a name='Tableofcontents'></a>Table of contents
 
 <!-- vscode-markdown-toc -->
-* [Table of contents](#Tableofcontents)
 * [Usage examples](#Usageexamples)
 	* [Initialization](#Initialization)
 	* [Getting a profile](#Gettingaprofile)
