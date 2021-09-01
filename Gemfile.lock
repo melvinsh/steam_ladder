@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    steam_ladder (0.3.0)
+      http (~> 5.0, >= 5.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,10 +70,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  coveralls
+  coveralls (~> 0.8.23)
   dotenv (~> 2.7, >= 2.7.6)
-  http (~> 5.0, >= 5.0.1)
   rspec (~> 3.5)
+  steam_ladder!
 
 BUNDLED WITH
    2.2.22
